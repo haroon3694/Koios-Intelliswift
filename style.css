@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+.jumbotron{
+  padding: none !important;
+  border-radius: 0px !important;
+}
+
 /* Navbar */
+
+a.nav-link{
+  color: white !important;
+}
 
 .navbar-nav .active>.nav-link{
   color: #54b6c0 !important;
@@ -10,16 +20,6 @@
 
 
 /* landing section */
-
-
-.koiosbg{
-  background-image: url("images/herosynapse.jpg");
-  height: 65vh; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-}
-
 .textoverlay{
   position: absolute;
   top: 30%;
@@ -28,9 +28,33 @@
   text-align: center;
 }
 
-.secondtextoverlay{
+
+.koiosbg{
+  background-image: url("images/banner.png");
+  height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* simplify section */
+
+.paddedtext{
+  padding-top: 120px !important;
+}
+
+.simplifyoverlay{
   position: absolute;
-  bottom: 35%;
+  top: 30%;
+  left: 10%;
+  color: black !important;
+  text-align: center;
+}
+
+
+.secondsimplifyoverlay{
+  position: absolute;
+  top: 50%;
   right: 10%;
   color: black !important;
   text-align: center;
@@ -54,6 +78,25 @@ strong::after{
   border-radius: 50px;
 }
 
+.strong{
+  position: absolute;
+  left: 00px;
+  top: 20px;
+  width: 100%;
+}
+
+.strong::after{
+  content: "";
+  position: absolute;
+  left: 270px;
+  top: 50px;
+  width: 40%;
+  height: 2px;
+  display: inline-block;
+  background: #ec999c;
+  border-radius: 50px;
+}
+
 
 
 /* why choose koios */
@@ -64,7 +107,7 @@ strong::after{
 
 .whychoose{
   overflow: auto;
-  margin-top: -120px !important;
+  margin-top: -170px !important;
   z-index: 1;
 }
 
@@ -72,28 +115,180 @@ strong::after{
   width: 80px !important;
 }
 
+/* User personas */
+
+.persona{
+  margin-top: 0px !important;
+  height: auto !important;
+}
+
+.personasbg{
+  background-image: url("images/personas.png");
+  height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.btn-custom{
+  background-color: #55b6c1 !important;
+  width: 300px !important;
+  height: 40px !important;
+  border-radius: 25px !important;
+  
+}
+
+/* subscriptions */
+
+.subscriptions{
+  background-color: white !important;
+  color: white !important;
+}
+
+.subscriptionsbg{
+  background-image: url("images/subscription.png");
+  height: 50vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.substrong{
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 100%;
+}
+
+.substrong::after{
+  content: "";
+  position: absolute;
+  left: 400px;
+  top: 50px;
+  width: 50%;
+  height: 2px;
+  display: inline-block;
+  background: #ec999c;
+  border-radius: 50px;
+}
+
+
+/* about us */
+
+.aboutus{
+  position: absolute;
+  width: 50% !important;
+  width: 100%;
+  top: 15% !important;
+  left: 25%;
+  box-shadow: 0px 0px 50px #000;
+}
+
+
+.page-footer{
+  z-index: 0 !important;
+  height: auto !important;
+}
+
+.btn-warning{
+  background-image: linear-gradient(#304a69, #5091a3);
+  border: none !important;
+  border-radius: 25px !important;
+  color: white !important;
+  font-weight: lighter !important;
+  font-size: 24px !important;
+}
+
+footer ul.social-network {
+  list-style: none;
+  margin: 0;
+  margin-top: 3px;
+  padding: 0px;
+}
+
+ul{
+  list-style: none !important;
+  
+}
+
+.footlist{
+  padding: none !important;
+}
+
+
+.footsocials li{
+  float: left;
+  margin: 10px !important;
+}
+
+.footlinks a{
+  color: white !important;
+}
+
+.fa-facebook-f:before, .fa-twitter:before,.fa-linkedin-in:before{
+  color: white !important;
+  margin: 10px !important;
+}
+
+@media only screen and (min-width: 798px) and (max-width: 1199px) {
+  
+.persona{
+  margin-top: -140px !important;
+}
+
+
+/* about us */
+
+.aboutus{
+  position: absolute;
+  width: 50%;
+  top: 5% !important;
+  left: 25%;
+  box-shadow: 0px 0px 50px #000;
+}
+
+.page-footer{
+  z-index: 0 !important;
+  height: auto !important;
+}
+
+}
+
+@media only screen and (min-width: 1200px){
+  .koiosbg{
+    background-image: url("images/banner.png");
+    height: 90vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 
 @media only screen and (max-width: 798px) {
 
+  .mobilehide{
+    display: none !important;
+  }
+
   /* landing section mobile */
 
   .koiosbg{
-      background-image: url("images/herosynapse.jpg");
+      background-image: url("images/banner.png");
       height: 100vh; 
       background-position: center;
       background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
     }
 
-    .textoverlay{
+    .simplifyoverlay{
         position: absolute;
         left: 0%;
         color: black !important;
         text-align: center;
     }
 
-    .secondtextoverlay{
+    .secondsimplifyoverlay{
       position: absolute;
       bottom: 10%;
       right: 0%;
@@ -121,9 +316,58 @@ strong::after{
       margin-top: 0px !important;
       z-index: 1;
     }
-    
-}
 
+    /*persona */
+
+    .persona{
+      margin-top: -0px !important;
+      height: auto !important;
+    }
+
+    .personasbg{
+      background-image: url("images/personas.png");
+      height: auto; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* subscriptions */
+
+    .subscriptionsbg{
+      background-image: url("images/subscription.png");
+      height: auto; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    
+      /* about us */
+
+      .aboutus{
+        position: absolute;
+        width: 100%;
+        top: 0% !important;
+        left: 0%;
+        box-shadow: 0px 0px 50px #000;
+      }
+
+      .aboutussection{
+        height: 100px !important;
+      }
+
+
+      .page-footer{
+        z-index: 0 !important;
+        height: auto !important;
+      }
+
+      .btn-warning{
+        font-size: 16px !important;
+      }
+      
+    }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document

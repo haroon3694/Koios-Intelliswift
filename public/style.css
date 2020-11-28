@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+.navbar{
+  animation: navbar 2.5s;
+}
+
+@keyframes navbar {
+  from {top: -100px;}
+  to {top: 0px;}
+}
+
 
 .jumbotron{
   padding: none !important;
@@ -35,12 +44,30 @@ a.nav-link{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #000 !important;
 }
+
+.scrolled {
+  background-image: linear-gradient(to right, #5091a3,#304a69, #304a69);
+  transition: background-color 200ms linear;
+  -webkit-box-shadow: 0 8px 6px -6px #000;
+  -moz-box-shadow: 0 8px 6px -6px #000;
+  box-shadow: 0 8px 6px -6px #000;
+}
+
 
 /* simplify section */
 
 .paddedtext{
   padding-top: 120px !important;
+}
+
+.simplifybg{
+  background-image: url("images/simplify.png");
+  height: 60vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .simplifyoverlay{
@@ -115,6 +142,10 @@ strong::after{
   width: 80px !important;
 }
 
+.pointerstext{
+  font-size: 14px !important;
+}
+
 /* User personas */
 
 .persona{
@@ -131,11 +162,19 @@ strong::after{
 }
 
 .btn-custom{
-  background-color: #55b6c1 !important;
-  width: 300px !important;
-  height: 40px !important;
-  border-radius: 25px !important;
   
+  height: 40px !important;
+  border-top-right-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+}
+
+.btn-primary{
+  background-color: white !important;
+  border: none !important;
+  height: 40px !important;
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
+ 
 }
 
 /* subscriptions */
@@ -177,13 +216,17 @@ strong::after{
 
 .aboutus{
   position: absolute;
-  width: 50% !important;
+  width: 60% !important;
   width: 100%;
-  top: 15% !important;
-  left: 25%;
+  top: 27% !important;
+  left: 20%;
   box-shadow: 0px 0px 50px #000;
+  padding: 40px !important;
 }
 
+.aboutussection{
+  height: 500px !important;
+}
 
 .page-footer{
   z-index: 0 !important;
@@ -230,6 +273,18 @@ ul{
   margin: 10px !important;
 }
 
+
+@media only screen and (min-width: 400px) and (max-width: 797px) {
+  .aboutus{
+    position: absolute;
+    width: 50%;
+    top: 0% !important;
+    left: 25%;
+    box-shadow: 0px 0px 50px #000;
+  }
+  
+}
+
 @media only screen and (min-width: 798px) and (max-width: 1199px) {
   
 .persona{
@@ -242,7 +297,7 @@ ul{
 .aboutus{
   position: absolute;
   width: 50%;
-  top: 5% !important;
+  top: 20% !important;
   left: 25%;
   box-shadow: 0px 0px 50px #000;
 }
@@ -257,11 +312,17 @@ ul{
 @media only screen and (min-width: 1200px){
   .koiosbg{
     background-image: url("images/banner.png");
-    height: 90vh; 
+    height: 80vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: height 2s;
   }
+  .koiosscrolled {
+    height: 90vh !important;
+  }
+  
+  
 }
 
 
@@ -275,6 +336,14 @@ ul{
 
   .koiosbg{
       background-image: url("images/banner.png");
+      height: 100vh; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .simplifybg{
+      background-image: url("images/simplify.png");
       height: 100vh; 
       background-position: center;
       background-repeat: no-repeat;
@@ -347,14 +416,18 @@ ul{
 
       .aboutus{
         position: absolute;
-        width: 100%;
+        width: 100% !important;
         top: 0% !important;
         left: 0%;
-        box-shadow: 0px 0px 50px #000;
+        padding-top: 25px !important;
+        box-shadow: none !important;
+        background-color: white !important;
       }
 
       .aboutussection{
-        height: 100px !important;
+        height: 800px !important;
+        display: flex;
+        
       }
 
 

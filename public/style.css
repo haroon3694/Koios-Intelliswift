@@ -1,6 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#particles-js{
+  height: 100vh;
+  background: #ffffff40;
+  width: 100% !important;
+}
+
+
+
+.homeImageLink {
+  position: absolute; 
+  top: 15%; 
+  left: 0;
+  text-align: center; 
+  width: 100%; 
+}
+
 .navbar{
   animation: navbar 2.5s;
 }
@@ -31,6 +87,10 @@ a.nav-link{
   font-weight: 500 !important;
 }
 
+.brandlogo{
+  max-width: 400px !important;
+}
+
 
 /* landing section */
 .textoverlay{
@@ -40,6 +100,7 @@ a.nav-link{
   color: white !important;
   text-align: center;
   width: 100%;
+  z-index: 99 !important;
 }
 
 
@@ -154,6 +215,7 @@ a.nav-link{
   height: 600px !important;
 }
 
+
 .whychoose{
   overflow: auto;
   margin-top: -120px !important;
@@ -224,7 +286,7 @@ form{
 
 .subscriptionsbg{
   background-image: url("images/subscription.png");
-  height: 60vh; 
+  height: auto; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,11 +315,7 @@ form{
 /* about us */
 
 .aboutus{
-  position: absolute;
   width: 60% !important;
-  width: 100%;
-  top: 25% !important;
-  left: 20%;
   box-shadow: 0px 0px 50px #000;
   padding: 40px !important;
 }
@@ -267,7 +325,7 @@ form{
 }
 
 .page-footer{
-  z-index: 0 !important;
+  
   height: auto !important;
 }
 
@@ -278,6 +336,7 @@ form{
   color: white !important;
   font-weight: lighter !important;
   font-size: 24px !important;
+  margin-bottom: -120px !important;
 }
 
 footer ul.social-network {
@@ -314,7 +373,6 @@ ul{
 
 @media only screen and (min-width: 400px) and (max-width: 797px) {
   .aboutus{
-    position: absolute;
     width: 50%;
     top: 0% !important;
     left: 25%;
@@ -335,7 +393,6 @@ ul{
 /* about us */
 
 .aboutus{
-  position: absolute;
   width: 50%;
   top: 20% !important;
   left: 25%;
@@ -343,7 +400,7 @@ ul{
 }
 
 .page-footer{
-  z-index: 0 !important;
+ 
   height: auto !important;
 }
 
@@ -363,11 +420,12 @@ ul{
 
 @media only screen and (max-width: 798px) {
 
+
   .mobilehide{
     display: none !important;
   }
 
-  .navbar-brand{
+  .brandlogo{
     width: 200px !important;
   }
 
@@ -398,6 +456,14 @@ ul{
         left: 0%;
         color: black !important;
         text-align: center;
+    }
+
+    .homeImageLink {
+      position: absolute; 
+      top: 15%; 
+      left: 0;
+      text-align: center; 
+      width: 100%; 
     }
 
     .secondsimplifyoverlay{
@@ -458,29 +524,27 @@ ul{
       /* about us */
 
       .aboutus{
-        position: absolute;
         width: 100% !important;
-        top: 0% !important;
-        left: 0%;
         padding-top: 25px !important;
         box-shadow: none !important;
         background-color: white !important;
+        padding: 0px !important;
       }
 
       .aboutussection{
         height: 800px !important;
         display: flex;
-        
       }
 
 
       .page-footer{
-        z-index: 0 !important;
+       
         height: auto !important;
       }
 
       .btn-warning{
         font-size: 16px !important;
+        margin-bottom: 10px !important;
       }
       
     }

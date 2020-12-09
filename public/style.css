@@ -134,11 +134,20 @@ a.nav-link{
 }
 
 .simplifybg{
-  background-image: url("images/simplify.png");
   height: 70vh; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden !important; 
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+canvas{
+  position: absolute !important;
+  top:-25% !important;
+  left:0;
+  z-index:-1;
 }
 
 .simplifyoverlay{
@@ -444,11 +453,13 @@ ul{
     }
 
     .simplifybg{
-      background-image: url("images/simplify.png");
       height: 100vh; 
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      overflow: hidden !important; 
+      position: relative !important;
+      z-index: 1 !important;
     }
 
     .simplifyoverlay{
@@ -900,3 +911,5 @@ ul{
   [hidden] {
     display: none;
   }
+
+

@@ -87,6 +87,14 @@ a.nav-link{
   font-weight: 500 !important;
 }
 
+.nav-link:hover{
+ 
+    border-bottom: 1px solid #ff7000;
+    transition: transform 0.5s;
+    color: #4ADCED !important;
+      
+}
+
 .brandlogo{
   max-width: 400px !important;
 }
@@ -218,6 +226,7 @@ canvas{
 
 
 
+
 /* why choose koios */
 
 .koioscontainer{
@@ -229,6 +238,7 @@ canvas{
   overflow: auto;
   margin-top: -120px !important;
   z-index: 1;
+  max-height: 00px !important;
 }
 
 .pointers{

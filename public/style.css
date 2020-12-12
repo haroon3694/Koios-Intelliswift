@@ -238,7 +238,7 @@ canvas{
   overflow: auto;
   margin-top: -120px !important;
   z-index: 1;
-  max-height: 00px !important;
+  max-height: 1000px !important;
 }
 
 .pointers{

@@ -1,6 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* scroll */
+
+
+.ref{
+  color: #E4AD77;
+}
+
+.w-50{
+width: 50% !important;
+margin-left: -80px !important;
+}
+
+.scroll-txt {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  top: 80%;
+  left: 47%;
+}
+
+
+.chev {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 50px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -50px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+
+
 header {
   position: relative;
   background-color: black;
@@ -99,6 +209,10 @@ a.nav-link{
   max-width: 400px !important;
 }
 
+.predictivecardtitle{
+  color: #109F9C;
+}
+
 
 /* landing section */
 .textoverlay{
@@ -127,7 +241,6 @@ a.nav-link{
   -webkit-box-shadow: 0 8px 6px -6px #000;
   -moz-box-shadow: 0 8px 6px -6px #000;
   box-shadow: 0 8px 6px -6px #000;
-
 }
 
 .scrolled a.nav-link{
@@ -175,11 +288,18 @@ canvas{
   text-align: center;
 }
 
+.h1{
+  display: inline-block;
+  position: relative;
+  font-weight: 300;
+}
+
 .h1 strong{
   display: inline-block;
   position: relative;
   font-weight: 300;
 }
+
 
 .simplifyhr{
   content: "";
@@ -191,6 +311,24 @@ canvas{
   position: absolute;
   top: -35px;
   left: 15px;
+}
+
+.quickhr{
+  content: "";
+  width: 100%;
+  height: 2px !important;
+  display: inline-block;
+  background: #ec999c;
+  border-radius: 50px;
+}
+
+.analyticshr{
+  content: "";
+  width: 130%;
+  height: 2px !important;
+  display: inline-block;
+  background: #ec999c;
+  border-radius: 50px;
 }
 
 .subhr{
@@ -264,6 +402,15 @@ canvas{
   background-size: cover
 }
 
+.analyticsbg{
+  background-image: url("images/predictiveanalysis.png");
+  height: auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .btn-custom{
   height: 40px !important;
   border-top-right-radius: 25px !important;
@@ -305,6 +452,22 @@ form{
 
 .subscriptionsbg{
   background-image: url("images/subscription.png");
+  height: auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.videoanalyticsbg{
+  background-image: url("images/videoanalytics.png");
+  height: auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.multidevicebg{
+  background-image: url("images/multidevice.png");
   height: auto; 
   background-position: center;
   background-repeat: no-repeat;
@@ -397,9 +560,6 @@ ul{
     left: 25%;
     box-shadow: 0px 0px 50px #000;
   }
-
-
-  
 }
 
 @media only screen and (min-width: 798px) and (max-width: 1199px) {
@@ -531,6 +691,15 @@ ul{
       background-size: cover;
     }
 
+    .analyticsbg{
+      background-image: url("images/predictiveanalysis.png");
+      height: auto; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+
     /* subscriptions */
 
     .subscriptionsbg{
@@ -541,6 +710,21 @@ ul{
       background-size: cover;
     }
 
+    .videoanalyticsbg{
+      background-image: url("images/videoanalytics.png");
+      height: auto; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .videoanalyticsbg{
+      background-image: url("images/multidevice.png");
+      height: auto; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     
       /* about us */
 

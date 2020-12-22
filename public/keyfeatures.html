@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Haroon">
+	<title>Koios Intelliswift- Key Features</title>
+	<link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/65bb6480da.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+  </script>
+  
+  <script>
+	
+    $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      var $bg = $(".koiosbg");
+      $bg.toggleClass('koiosscrolled', $(this).scrollTop() > $nav.height())
+    });
+  });
+    </script>
+    <script>
+      
+$(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 5) { 
+            $('.navbar .navbar-brand img').attr('src','images/logocolor.png');
+        }
+        if ($(this).scrollTop() < 5) { 
+            $('.navbar .navbar-brand img').attr('src','images/logo.png');
+        }
+    })
+});
+    </script>
+</head>
+
+
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="100%"   class="img-fluid brandlogo" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Overview
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">KOIOS - The Platform</a>
+              <a class="dropdown-item" href="#">KOIOS - Key Features</a>
+              <a class="dropdown-item" href="#">KOIOS - Insights</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">User Persona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">Subscription Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-nowrap" href="#">Knowledge Base</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="images/Koios-purple-video.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <div class="h2">
+            <span style="font-weight: 100 !important;">Key Features- </span> 
+            Configurable Low-Code/<br>
+              No-Code Unified Data Analytics Platform <br>
+            <div class="pt-5">
+              <div class="row col-md-12 justify-content-center text-center mx-auto" style="width: 100%; border-radius: 25px; ">
+                  <form class="row">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" disabled aria-describedby="emailHelp" placeholder="Work Email">
+                  </div>
+                  <span  class="text-center text-white btn btn-custom" style="background-color: #55b6c1 !important; width: 240px; border-radius: 25px;">
+                    <a href="mailto:someone@example.com?subject=Enquiry&body=Name:%0D%0ACompanyMailID:%0D%0AOrganisation:%0D%0A" target="_top" style="text-decoration: none !important; color: white !important;">Connect With Us</a>
+                  </span>
+                </form>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
+
+  
+  <!--Keyfeatures-->
+  
+    <section class="bg-light simplifybg jumbotron">
+      <div class="waves">
+        <div class="container-fluid p-md-2 homeImageLink">
+          <div class="row mx-auto justify-content-center">
+            <div data-aos="fade-right" class="col-md-12 text-left mx-auto">
+              <div class="h1">
+                    key features - unified<br>
+                    data analytics platform 
+              </div>
+            </div>
+            <div data-aos="fade-left" class="col-md offset-md-6 float-right text-left">
+              <hr class="simplifyhr mobilehide">
+              <div>
+                In today's disrupted VUCA world, Koios enables your organization with 360 degree analytics capability that you can use to prepare, standardize, visualize & optimize your organizations’ data. Developed using micro-services, Koios can be deployed on any cloud and assures high availability to minimize disruption to business. 
+              </div>
+            <a style="color: #55b6c1;" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+  <script src="particles.js"></script>
+  
+
+<!--Quick--> 
+  <section class="jumbotron bg-white" style="overflow: hidden !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-12 text-justify order-md-1">
+            <div class="h1 text-left">
+                    quick & accurate data extraction, <br>
+                    preparation, load & transfer
+              </div>
+              <hr class="quickhr mobilehide">
+          <br> <br>
+          Empower your internal teams with a configurable / 'no-code required' ecosystem to create their own dashboards from available data sets with the power of AI/ML in a matter of days.
+
+          <div data-aos="fade-down" data-aos-duration="1400" >
+            <img src="images/vector.png" class="img-fluid" alt="">
+          </div>
+          
+        </div>
+        <div data-aos="fade-down" data-aos-duration="1400" class="col-md-6 order-1 order-md-12">
+          <img src="images/keyfeatures.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Predictive Analytics-->
+ 
+  <section class="analyticsbg" style="overflow: hidden !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="h1 pt-5">
+                    predictive analytics <br>
+                    workbench
+                    <hr class="analyticshr mobilehide">
+            </div>
+            
+           
+            <div class="row">
+                <div class="pt-3 col-md-6 w-75">
+                    Incorporate predictive modelling & machine learning to the dashboards. Help your stakeholders with just in time insights to take that next big business decision.
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="card" style="width: 10rem; background-color: transparent !important; border: none !important;">
+                        <img class="card-img-top mx-auto" style="width: 150px !important;" src="images/predictivevector.png" alt="Card image cap">
+                      </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="card" style="width: 10rem; background-color: transparent !important; border: none !important;">
+                        <img class="card-img-top mx-auto" style="width: 150px !important;" src="images/predictivevector.png" alt="Card image cap">
+                      </div>
+                </div>
+                <div class="col-md col-sm-12">
+                    <div class="card" style="width: 10rem; background-color: transparent !important; border: none !important;">
+                        <img class="card-img-top mx-auto" style="width: 150px !important;" src="images/predictivevector.png" alt="Card image cap">
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row pt-5">
+            <div class="col-md-12 text-center">
+                <div class="font-weight-bold">
+                    The Predictive Analytics Workbench
+                </div>
+            </div>
+        </div>
+        <div class="row p-5 mx-auto justify-content-center text-center">
+            <div class="col-md-3">
+              <div class="card" style="background-color: transparent !important; border: none !important;">
+                  <img class="card-img-top img-fluid mx-auto p-3 " src="images/connect.png" style="width: 120px;" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title predictivecardtitle">Connect to a <br> Data Source</h5>
+                    <p class="card-text text-justify">Determine what you want to predict or understand. Define the aspect on which you want to use BDB Predictive Workbench. </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card" style="background-color: transparent !important; border: none !important;">
+                  <img class="card-img-top img-fluid mx-auto p-3 " src="images/dataprep.png" style="width: 120px;" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title predictivecardtitle">Data Preparation – Transform, Cleanse <br> and Format the Data Set </h5>
+                    <p class="card-text text-justify">Acquire data in any form and modify to make it analysis ready. Use inbuilt allied components to prepare and transform data. </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card" style="background-color: transparent !important; border: none !important;">
+                  <img class="card-img-top img-fluid mx-auto p-3 " src="images/building.png" style="width: 120px;" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title predictivecardtitle">Prediction <br> Building </h5>
+                    <p class="card-text text-justify">Split data into train/test using drag & drop components. Configure algorithms & execute to view summary & results. Compare the scenarios and save the workflow to deploy as a service.</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card" style="background-color: transparent !important; border: none !important;">
+                  <img class="card-img-top img-fluid mx-auto p-3 " src="images/visualisation.png" style="width: 120px;" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title predictivecardtitle">Captivating <br> Visualization </h5>
+                    <p class="card-text text-justify">Display the predicted results through rich and interactive visuals for well-informed insight. </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+  <!--Social media-->
+
+	<section class="subscriptions  subscriptionsbg" style="overflow: hidden !important;">
+		<div class="container-fluid p-5">
+			<div class="row">
+				<div data-aos="fade-right" class="col-md-8 text-left">
+					<div class="h1">
+                        social media sentiment analysis with <br>
+                        NLP and geospatial analysis
+                    </div>
+                    <hr class="quickhr mobilehide">
+                </div>
+                <div class="col-md-4" style="font-weight: 100;">
+                    Nail more upselling opportunities leveraging the power of emotional triggers & geo coordinates via social browsing 
+                    & conversation analysis, targeted promotions via data plotting with geocodes, geo data capture from customer queries, and so on.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 p-4" style="font-weight: 100 !important;">
+                    <h5>Scrapes text & relevant data from:</h5>
+                    User sentiment from social media – Twitter/ Facebook LinkedIn/Google+ <br>
+                    User feedback from different e-Commerce channels 
+                    Relevant weather information for business correlations 
+                    Relevant digital media – Edmund, Team BHP, Market Watch
+                </div>
+                <div class="col-md-6 p-4" style="font-weight: 100 !important;">
+                    <h5>SMB extracts Big Data for:</h5>
+                    Focus Analysis – On people, brands, campaign,
+                    sales, sentiments, popularity, etc. 
+                    Marketing Effectiveness 
+                    Sentiment Analysis 
+                    Business Outliers 
+                    Correlation between Sentiment, Popularity & Sales 
+                </div>
+                <div class="col-md-6 p-4" style="font-weight: 100 !important;">
+                    <h5>Uses revolutionary technologies like:</h5>
+                    Spark 
+                    Kafka 
+                    Cassandra 
+                    Scala 
+                </div>
+                <div class="col-md-6 p-4" style="font-weight: 100 !important;">
+                    Common launch pad for searching, collating & analyzing digital data
+                </div>
+            </div>
+		</div>
+  </section>
+
+  <!--AI Driven-->
+
+	<section class="" style="overflow: hidden !important;">
+		<div class="container-fluid p-5">
+			<div class="row">
+				<div data-aos="fade-right" class="col-md-8 text-left">
+					<div class="h1">
+                        AI-driven & NLP based preemptive <br>
+                        search enabled customizable dashboards
+                    </div>
+                    <hr class="quickhr mobilehide">
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-4 py-5">
+                    <div class="pt-4">
+                        Enable auto-suggestion for searching relevant information. 
+                    </div>
+                </div>
+                <div class="col-md-8 py-5">
+                    <img src="images/search.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4 py-5">
+                    <div class="pt-4">
+                        Enhance your decision making capabilities with customizable real-time reporting 
+                    </div>
+                </div>
+                <div class="col-md-8 py-5">
+                    <img src="images/graph.png" class="img-fluid" alt="">
+                </div>
+            </div>
+		</div>
+  </section>
+
+  <!--Video Analytics-->
+
+	<section class="videoanalyticsbg py-5" style="overflow: hidden !important;">
+		<div class="container-fluid p-5">
+			<div class="row">
+				<div class="col-md-6">
+                    <img src="images/videoimg.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 my-auto">
+                    <div class="h1">
+                        Video Analytics
+                    </div>
+                    <hr class="quickhr mobilehide">
+                    The world today, is dominated with visual content; hence, huge amounts of data needs to be parsed & analyzed 
+                    in order to garner meaningful insights. Get your business analytics to the next level via AI-driven video analytics.
+                </div>
+            </div>
+		</div>
+  </section>
+
+  <!--Multi Device-->
+
+	<section class="multidevicebg py-5" style="overflow: hidden !important;">
+		<div class="container-fluid p-5">
+			<div class="row">
+                <div class="col-md-5 my-auto text-white">
+                    <div class="h1">
+                        multi device deployment & mobile ready
+
+                    </div>
+                    <hr class="quickhr mobilehide">
+                    Access anywhere, anytime and get real-time insights on-the-go with drag & drop features, interactive user interface and end point security compliance.
+                </div>
+				<div class="col-md">
+                    <img src="images/multiimg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+		</div>
+  </section>
+
+
+  <!--about us-->
+
+  <section class="p-5" data-aos="fade-down" data-aos-duration="1400" >
+    <div class="aboutus bg-light container" >
+      <div class="row text-center">
+        <div class="col-md-12 h1" style="color: #55b6c1 !important">
+          about us
+        </div>
+        <div class="col-md-12 text-justify p-3">
+          At Intelliswift, we are leaders in delivering Digital Product Engineering, Data Management & Analytics, and Talent Solutions 
+          to enable more innovative and efficient businesses. Our strategic global locations and delivery centers are home to multidisciplinary 
+          teams of technology experts who partner with clients to solve today’s most complex challenges and deliver valuable insights, solutions, 
+          and results that impact their business positively. With customer excellence at the core, Intelliswift has established itself as a top service 
+          provider, delivering award-winning professional services to over 130+ Fortune 100 and Fortune 500 organizations.
+        </div>
+        <div class="col-md-12 text-center mx-auto" >
+          <div class="btn btn-warning px-5 py-2">
+            learn more
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer-->
+<footer class="page-footer " style=" background-image: linear-gradient(to right, #5091a3,#304a69, #304a69);">
+  <div class="container-fluid pl-md-5 pt-3 pt-sm-5 pb-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="footleft">
+                <a href="/">
+                    <img src="images/logo1.png" alt="">
+                </a>
+                <p class="text-white">Intelliswift 2020. All Rights Reserved</p>
+                <div class="footsocials row w-auto">
+                    <ul class="social-network">
+                        <li>
+                            <a href="https://www.facebook.com/IntelliswiftSoftware" target="_blank" data-placement="bottom" title="" data-original-title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/intelliswiftS" target="_blank" data-placement="bottom" title="" data-original-title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/intelliswift" target="_blank" data-placement="bottom" title="" data-original-title="Linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      <div class="row col-md-8 text-white">
+        <div class="col-sm p-3">
+          <h3>Information</h3>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">About Us</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Careers</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Contact Us</div>
+        </div>
+        <div class="col-sm p-3">
+          <h3>Service</h3>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Product Engineering</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">IT Services</div>
+        </div>
+        <div class="col-sm p-3">
+          <h3>Support</h3>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Disclaimer</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Privacy Policy</div>
+          <div onclick="location.href='newurl.html'" style="cursor: pointer;">Internal Announcements</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+  
+</body>
+</html>
